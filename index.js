@@ -4,7 +4,7 @@ import {
   useMultiFileAuthState,
   DisconnectReason,
   fetchLatestBaileysVersion,
-  makeInMemoryStore,
+  
 } from '@whiskeysockets/baileys';
 import pino from 'pino';
 import qrcode from 'qrcode-terminal';
@@ -38,7 +38,7 @@ if (process.env.WA_CREDS_JSON) {
 const logger = pino({ level: 'silent' });
 
 // ─── STORE ────────────────────────────────────────────────────────────────────
-const store = makeInMemoryStore({ logger });
+
 
 // ─── STATE ────────────────────────────────────────────────────────────────────
 let sock        = null;
