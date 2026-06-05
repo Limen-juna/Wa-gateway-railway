@@ -6,7 +6,7 @@ import express from 'express';
   fetchLatestBaileysVersion,
 
 
-import pino from 'pino';
+const pino = require 'pino';
 import qrcode from 'qrcode-terminal';
 import nodeHtmlToImage from 'node-html-to-image';
 import { Buffer } from 'buffer';
