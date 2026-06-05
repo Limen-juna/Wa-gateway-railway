@@ -1,11 +1,11 @@
 import express from 'express';
-import {
+
   makeWASocket,
   useMultiFileAuthState,
   DisconnectReason,
   fetchLatestBaileysVersion,
 
-} from '@whiskeysockets/baileys';
+
 import pino from 'pino';
 import qrcode from 'qrcode-terminal';
 import nodeHtmlToImage from 'node-html-to-image';
@@ -37,7 +37,6 @@ if (process.env.WA_CREDS_JSON) {
 // ─── LOGGER ───────────────────────────────────────────────────────────────────
 const logger = pino({ level: 'silent' });
 
-// ─── STORE ────────────────────────────────────────────────────────────────────
 
 
 // ─── STATE ────────────────────────────────────────────────────────────────────
@@ -69,7 +68,7 @@ async function connectWA() {
     generateHighQualityLinkPreview: false,
   });
 
-  store.bind(sock.ev);
+  
 
   sock.ev.on('connection.update', async (update) => {
     const { connection, lastDisconnect, qr } = update;
