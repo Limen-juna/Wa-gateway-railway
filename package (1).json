@@ -1,0 +1,19 @@
+{
+  "name": "baileys-nota-service",
+  "version": "1.0.0",
+  "description": "WhatsApp gateway microservice untuk nota thermal",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "express": "^4.19.2",
+    "pino": "^9.5.0",
+    "node-html-to-image": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
